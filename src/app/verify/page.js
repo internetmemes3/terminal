@@ -40,7 +40,7 @@ export default function VerifyPage() {
           </div>
           
           <div className="command-line">
-            $ ./verify_identity.sh --wallet=phantom
+            $ ./verify_identity.sh --wallet=base
           </div>
           
           <div className="instructions-box">
@@ -48,7 +48,7 @@ export default function VerifyPage() {
               $ cat instructions.txt
             </div>
             <div className="instructions-content">
-              Connect your Phantom wallet to verify
+              Connect your Base wallet to verify
               identity and token holdings.
               Secure authentication required for
               network access.

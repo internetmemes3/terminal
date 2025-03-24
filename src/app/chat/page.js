@@ -97,7 +97,7 @@ export default function ChatPage() {
           <div className="protocol-step">
             <div className="step-number"><span>02</span> CONNECT</div>
             <div className="step-command">$ ./connect_wallet.sh</div>
-            <div className="step-description">Establish secure connection<br />with Phantom wallet</div>
+            <div className="step-description">Establish secure connection<br />with Base_wallet</div>
           </div>
           
           <div className="protocol-step">
