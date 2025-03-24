@@ -64,7 +64,7 @@ export default function VerifyPage() {
             onClick={handleConnect}
             disabled={connecting}
           >
-            {connecting ? 'Connecting...' : '$ ./connect_phantom.sh'}
+            {connecting ? 'Connecting...' : '$ ./connect_base.sh'}
           </button>
           
           <div className="help-text">
