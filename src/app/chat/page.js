@@ -11,7 +11,29 @@ export default function ChatPage() {
   const [message, setMessage] = useState('');
   const [showCursor, setShowCursor] = useState(true);
   const messageInputRef = useRef(null);
+  const [displayText, setDisplayText] = useState('');
+  const fullText = 'CARTEL UNDERGROUND NETWORK';
   
+  useEffect(() => {
+    let i = 0;
+    const typingInterval = setInterval(() => {
+      if (i < fullText.length) {
+        setDisplayText(fullText.substring(0, i + 1));
+        i++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 100); 
+
+    const cursorInterval = setInterval(() => {
+      setShowCursor(prev => !prev);
+    }, 500);
+
+    return () => {
+      clearInterval(typingInterval);
+      clearInterval(cursorInterval);
+    };
+  }, []);
 
   useEffect(() => {
     const cursorInterval = setInterval(() => {
@@ -110,7 +132,11 @@ export default function ChatPage() {
           </div>
           
           <div className="chat-title-section">
-            <h1>SECURE CHANNEL</h1>
+          <div className="command-line">
+        <h1 className="command-line" style={{ borderRight: 'none' }}>
+          {displayText}<span style={{ opacity: showCursor ? 1 : 0 }}>_</span>
+        </h1>
+      </div>
             <div className="command-line">$ ./encrypted_comms.sh --e2e</div>
           </div>
           
