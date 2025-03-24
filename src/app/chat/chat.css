@@ -202,4 +202,77 @@
   width: 24px;
   height: 24px;
   fill: var(--terminal-green);
+}
+
+.chat-page-layout {
+  display: flex;
+  padding: 2rem;
+  background-color: var(--background);
+}
+
+.active-nodes-panel {
+  width: 250px;
+  border: 1px solid var(--terminal-green);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  color: var(--terminal-green);
+  font-family: monospace;
+}
+
+.terminal-command {
+  padding: 15px;
+  border-bottom: 1px solid rgba(0, 255, 102, 0.3);
+}
+
+.node-list {
+  padding: 15px;
+}
+
+.node-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.node-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(0, 255, 102, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.node-info {
+  flex: 1;
+}
+
+.node-address {
+  font-weight: bold;
+  color: var(--terminal-green);
+}
+
+.node-status {
+  font-size: 12px;
+  color: rgba(0, 255, 102, 0.7);
+}
+
+.node-actions {
+  margin-left: 10px;
+}
+
+.node-message-icon {
+  font-size: 16px;
+  color: var(--terminal-green);
+}
+
+.chat-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 } 

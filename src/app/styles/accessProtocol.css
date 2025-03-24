@@ -19,10 +19,12 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-bottom: 3rem;
+  padding: 1rem;
 }
 
 .protocol-step {
   border: 1px solid var(--terminal-green);
+  border-radius: 5px;
   padding: 1.5rem;
   transition: background-color 0.3s ease, transform 0.2s ease;
   cursor: pointer;

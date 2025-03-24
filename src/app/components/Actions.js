@@ -5,7 +5,7 @@ export default function Actions() {
   const router = useRouter();
 
   const handleConnect = () => {
-    router.push('/boot');
+    router.push('/verify');
   };
   
   return (
