@@ -227,6 +227,11 @@
   border-bottom: 1px solid rgba(0, 255, 102, 0.3);
 }
 
+.animation {
+  padding: 100px;
+  border-bottom: 1px solid rgba(0, 255, 102, 0.3);
+}
+
 .node-list {
   padding: 15px;
 }

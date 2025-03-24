@@ -73,7 +73,8 @@ export default function ChatPage() {
         <div className="terminal-command">
           $ ./list_active_nodes.sh (1)
         </div>
-        
+        <div className="animation">
+        </div>
         <div className="node-list">
           <div className="node-item">
             <div className="node-info">
