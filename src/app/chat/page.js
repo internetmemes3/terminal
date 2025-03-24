@@ -34,14 +34,6 @@ export default function ChatPage() {
       clearInterval(cursorInterval);
     };
   }, []);
-
-  useEffect(() => {
-    const cursorInterval = setInterval(() => {
-      setShowCursor(prev => !prev);
-    }, 500);
-    
-    return () => clearInterval(cursorInterval);
-  }, []);
   
   const handleSendMessage = () => {
     if (message.trim()) {
